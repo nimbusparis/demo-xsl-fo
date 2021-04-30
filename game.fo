@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?><fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<fo:layout-master-set>
+<fo:simple-page-master margin-right="2.5cm" margin-left="2.5cm" margin-bottom="2cm" margin-top="1cm" page-width="21cm" page-height="29.7cm" master-name="simple">
+<fo:region-body margin-top="3cm"/>
+<fo:region-before extent="3cm"/>
+<fo:region-after extent="1.5cm"/>
+</fo:simple-page-master>
+</fo:layout-master-set>
+<fo:page-sequence master-reference="simple">
+<fo:flow flow-name="xsl-region-body">
+<fo:block padding-top="3pt" text-align="center" color="black" space-after.optimum="15pt" line-height="24pt" font-family="sans-serif" font-size="28pt">
+            Chasse au trésor de Paris</fo:block>
+<fo:block padding-top="3pt" text-align="left" color="black" space-after.optimum="15pt" line-height="24pt" font-family="sans-serif" font-size="11pt">
+            La chasse au trésor de <fo:inline font-weight="bold">Paris</fo:inline> débutera le 2021-05-01T14:00:00.
+          </fo:block>
+<fo:block padding-top="3pt" text-align="left" color="black" space-after.optimum="15pt" line-height="24pt" font-family="sans-serif" font-size="11pt">
+            Participerons à cette chasse les équipes suivantes :
+          </fo:block>
+<fo:list-block>
+    <fo:list-item>
+<fo:list-item-label end-indent="label-end()">
+<fo:block>
+<fo:inline font-family="Symbol">•</fo:inline>
+</fo:block>
+</fo:list-item-label>
+<fo:list-item-body start-indent="body-start()">
+<fo:block>Team1</fo:block>
+<fo:list-block>
+      <fo:list-item>
+<fo:list-item-label end-indent="label-end()">
+<fo:block>
+<fo:inline font-family="Symbol">•</fo:inline>
+</fo:block>
+</fo:list-item-label>
+<fo:list-item-body start-indent="body-start()">
+<fo:block>Player1</fo:block>
+</fo:list-item-body>
+</fo:list-item>
+      <fo:list-item>
+<fo:list-item-label end-indent="label-end()">
+<fo:block>
+<fo:inline font-family="Symbol">•</fo:inline>
+</fo:block>
+</fo:list-item-label>
+<fo:list-item-body start-indent="body-start()">
+<fo:block>Player2</fo:block>
+</fo:list-item-body>
+</fo:list-item>
+      </fo:list-block>
+</fo:list-item-body>
+</fo:list-item>
+    <fo:list-item>
+<fo:list-item-label end-indent="label-end()">
+<fo:block>
+<fo:inline font-family="Symbol">•</fo:inline>
+</fo:block>
+</fo:list-item-label>
+<fo:list-item-body start-indent="body-start()">
+<fo:block>Team2</fo:block>
+<fo:list-block>
+      <fo:list-item>
+<fo:list-item-label end-indent="label-end()">
+<fo:block>
+<fo:inline font-family="Symbol">•</fo:inline>
+</fo:block>
+</fo:list-item-label>
+<fo:list-item-body start-indent="body-start()">
+<fo:block>Player3</fo:block>
+</fo:list-item-body>
+</fo:list-item>
+      <fo:list-item>
+<fo:list-item-label end-indent="label-end()">
+<fo:block>
+<fo:inline font-family="Symbol">•</fo:inline>
+</fo:block>
+</fo:list-item-label>
+<fo:list-item-body start-indent="body-start()">
+<fo:block>Player4</fo:block>
+</fo:list-item-body>
+</fo:list-item>
+      <fo:list-item>
+<fo:list-item-label end-indent="label-end()">
+<fo:block>
+<fo:inline font-family="Symbol">•</fo:inline>
+</fo:block>
+</fo:list-item-label>
+<fo:list-item-body start-indent="body-start()">
+<fo:block>Player5</fo:block>
+</fo:list-item-body>
+</fo:list-item>
+      </fo:list-block>
+</fo:list-item-body>
+</fo:list-item>
+  </fo:list-block>
+<fo:block padding-top="3pt" text-align="left" color="black" space-after.optimum="15pt" line-height="24pt" font-family="sans-serif" font-size="11pt">
+            Il y aura les actions suivantes à faire :
+          </fo:block>
+<fo:table border-collapse="collapse" width="100%" table-layout="fixed">
+<fo:table-column border-style="solid" column-width="50mm"/>
+<fo:table-column border-style="solid" column-width="50mm"/>
+<fo:table-header border-style="solid">
+<fo:table-row>
+<fo:table-cell>
+<fo:block>Action</fo:block>
+</fo:table-cell>
+<fo:table-cell>
+<fo:block>Points</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-header>
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell>
+<fo:block>Faire un selfie</fo:block>
+</fo:table-cell>
+<fo:table-cell>
+<fo:block>10</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+<fo:block padding-top="3pt" text-align="left" color="black" space-after.optimum="15pt" line-height="24pt" font-family="sans-serif" font-size="11pt">
+            Les photos suivantes seront à découvrir :
+          </fo:block>
+<fo:table border-collapse="collapse" width="100%" table-layout="fixed">
+<fo:table-column border-style="solid" column-width="50mm"/>
+<fo:table-column border-style="solid" column-width="50mm"/>
+<fo:table-column border-style="solid" column-width="50mm"/>
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell>
+<fo:block>
+<fo:external-graphic content-width="50mm" content-height="scale-to-fit" scaling="uniform" src="http://example.com/image2.jpg"/>
+</fo:block>
+<fo:block text-align="center">1 Points
+      </fo:block>
+</fo:table-cell>
+<fo:table-cell>
+<fo:block>
+<fo:external-graphic content-width="50mm" content-height="scale-to-fit" scaling="uniform" src="http://example.com/image3.jpg"/>
+</fo:block>
+<fo:block text-align="center">2 Points
+      </fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:flow>
+</fo:page-sequence>
+</fo:root>
