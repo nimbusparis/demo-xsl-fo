@@ -1,212 +1,150 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-
-<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
-  <fo:layout-master-set>
-    <fo:simple-page-master master-name="simple"
-                  page-height="29.7cm"
-                  page-width="21cm"
-                  margin-top="1cm"
-                  margin-bottom="2cm"
-                  margin-left="2.5cm"
-                  margin-right="2.5cm">
-      <fo:region-body margin-top="3cm"/>
-      <fo:region-before extent="3cm"/>
-      <fo:region-after extent="1.5cm"/>
-    </fo:simple-page-master>
-  </fo:layout-master-set>
-  <fo:page-sequence master-reference="simple">
-    <fo:flow flow-name="xsl-region-body">
-      <fo:block font-size="28pt"
-      font-family="sans-serif"
-      line-height="24pt"
-      space-after.optimum="15pt"
-      
-      color="black"
-      text-align="center"
-      padding-top="3pt">
-        Chasse au trésor de Paris
-      </fo:block>
-      <fo:block font-size="11pt"
-        font-family="sans-serif"
-        line-height="24pt"
-        space-after.optimum="15pt"
-      
-        color="black"
-        text-align="left"
-        padding-top="3pt">
-        La chasse au trésor de <fo:inline font-weight="bold">Paris</fo:inline> débutera le 01/05/2021 à 14h00.
-      </fo:block>
-      <fo:block font-size="11pt"
-        font-family="sans-serif"
-        line-height="24pt"
-        space-after.optimum="15pt"
-      
-        color="black"
-        text-align="left"
-        padding-top="3pt">
-        Participerons à cette chasse les équipes suivantes :
-      </fo:block>
-      <fo:list-block>
+<?xml version="1.0" encoding="UTF-8"?>
+  <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<fo:layout-master-set>
+<fo:simple-page-master margin-right="2.5cm" margin-left="2.5cm" margin-bottom="2cm" margin-top="1cm" page-width="21cm" page-height="29.7cm" master-name="simple">
+<fo:region-body margin-top="3cm"/>
+<fo:region-before extent="3cm"/>
+<fo:region-after extent="1.5cm"/>
+</fo:simple-page-master>
+</fo:layout-master-set>
+<fo:page-sequence master-reference="simple">
+<fo:flow flow-name="xsl-region-body">
+<fo:block padding-top="3pt" text-align="center" color="black" space-after.optimum="15pt" line-height="24pt" font-family="sans-serif" font-size="28pt">
+            Chasse au trésor de Paris</fo:block>
+<fo:block padding-top="3pt" text-align="left" color="black" space-after.optimum="15pt" line-height="24pt" font-family="sans-serif" font-size="11pt">
+            La chasse au trésor de <fo:inline font-weight="bold">Paris</fo:inline> débutera le 01/05/2021 à 14:00:00.
+          </fo:block>
+<fo:block padding-top="3pt" text-align="left" color="black" space-after.optimum="15pt" line-height="24pt" font-family="sans-serif" font-size="11pt">
+            Participerons à cette chasse les équipes suivantes :
+          </fo:block>
+<fo:list-block>
+      <fo:list-item>
+<fo:list-item-label end-indent="label-end()">
+<fo:block>
+<fo:inline font-family="Symbol">•</fo:inline>
+</fo:block>
+</fo:list-item-label>
+<fo:list-item-body start-indent="body-start()">
+<fo:block>Team1</fo:block>
+<fo:list-block>
         <fo:list-item>
-          <fo:list-item-label end-indent="label-end()">
-            <fo:block>
-              <fo:inline font-family="Symbol">&#x2022;</fo:inline>
-            </fo:block>
-          </fo:list-item-label>
-          <fo:list-item-body start-indent="body-start()">
-            <fo:block>
-              Team 1
-            </fo:block>
-            <fo:list-block>
-              <fo:list-item>
-                <fo:list-item-label end-indent="label-end()">
-                  <fo:block>
-                    <fo:inline font-family="Symbol">&#x2022;</fo:inline>
-                  </fo:block>
-                </fo:list-item-label>
-                <fo:list-item-body start-indent="body-start()">
-                  <fo:block>
-                    Player 1
-                  </fo:block>
-                </fo:list-item-body>
-              </fo:list-item>
-              <fo:list-item>
-                <fo:list-item-label end-indent="label-end()">
-                  <fo:block>
-                    <fo:inline font-family="Symbol">&#x2022;</fo:inline>
-                  </fo:block>
-                </fo:list-item-label>
-                <fo:list-item-body start-indent="body-start()">
-                  <fo:block>
-                    Player 2
-                  </fo:block>
-                </fo:list-item-body>
-              </fo:list-item>
-            </fo:list-block>
-          </fo:list-item-body>
-        </fo:list-item>
+<fo:list-item-label end-indent="label-end()">
+<fo:block>
+<fo:inline font-family="Symbol">•</fo:inline>
+</fo:block>
+</fo:list-item-label>
+<fo:list-item-body start-indent="body-start()">
+<fo:block>Player1</fo:block>
+</fo:list-item-body>
+</fo:list-item>
         <fo:list-item>
-          <fo:list-item-label end-indent="label-end()">
-            <fo:block>
-              <fo:inline font-family="Symbol">&#x2022;</fo:inline>
-            </fo:block>
-          </fo:list-item-label>
-          <fo:list-item-body start-indent="body-start()">
-            <fo:block>
-              Team 2
-            </fo:block>
-            <fo:list-block>
-              <fo:list-item>
-                <fo:list-item-label end-indent="label-end()">
-                  <fo:block>
-                    <fo:inline font-family="Symbol">&#x2022;</fo:inline>
-                  </fo:block>
-                </fo:list-item-label>
-                <fo:list-item-body start-indent="body-start()">
-                  <fo:block>
-                    Player 3
-                  </fo:block>
-                </fo:list-item-body>
-              </fo:list-item>
-              <fo:list-item>
-                <fo:list-item-label end-indent="label-end()">
-                  <fo:block>
-                    <fo:inline font-family="Symbol">&#x2022;</fo:inline>
-                  </fo:block>
-                </fo:list-item-label>
-                <fo:list-item-body start-indent="body-start()">
-                  <fo:block>
-                    Player 4
-                  </fo:block>
-                </fo:list-item-body>
-              </fo:list-item>
-              <fo:list-item>
-                <fo:list-item-label end-indent="label-end()">
-                  <fo:block>
-                    <fo:inline font-family="Symbol">&#x2022;</fo:inline>
-                  </fo:block>
-                </fo:list-item-label>
-                <fo:list-item-body start-indent="body-start()">
-                  <fo:block>
-                    Player 5
-                  </fo:block>
-                </fo:list-item-body>
-              </fo:list-item>
-            </fo:list-block>
-
-          </fo:list-item-body>
-        </fo:list-item>
-      </fo:list-block>
-      <fo:block font-size="11pt"
-  font-family="sans-serif"
-  line-height="24pt"
-  space-after.optimum="15pt"
-      
-  color="black"
-  text-align="left"
-  padding-top="3pt">
-        Il y aura les actions suivantes à faire :
+<fo:list-item-label end-indent="label-end()">
+<fo:block>
+<fo:inline font-family="Symbol">•</fo:inline>
+</fo:block>
+</fo:list-item-label>
+<fo:list-item-body start-indent="body-start()">
+<fo:block>Player2</fo:block>
+</fo:list-item-body>
+</fo:list-item>
+        </fo:list-block>
+</fo:list-item-body>
+</fo:list-item>
+      <fo:list-item>
+<fo:list-item-label end-indent="label-end()">
+<fo:block>
+<fo:inline font-family="Symbol">•</fo:inline>
+</fo:block>
+</fo:list-item-label>
+<fo:list-item-body start-indent="body-start()">
+<fo:block>Team2</fo:block>
+<fo:list-block>
+        <fo:list-item>
+<fo:list-item-label end-indent="label-end()">
+<fo:block>
+<fo:inline font-family="Symbol">•</fo:inline>
+</fo:block>
+</fo:list-item-label>
+<fo:list-item-body start-indent="body-start()">
+<fo:block>Player3</fo:block>
+</fo:list-item-body>
+</fo:list-item>
+        <fo:list-item>
+<fo:list-item-label end-indent="label-end()">
+<fo:block>
+<fo:inline font-family="Symbol">•</fo:inline>
+</fo:block>
+</fo:list-item-label>
+<fo:list-item-body start-indent="body-start()">
+<fo:block>Player4</fo:block>
+</fo:list-item-body>
+</fo:list-item>
+        <fo:list-item>
+<fo:list-item-label end-indent="label-end()">
+<fo:block>
+<fo:inline font-family="Symbol">•</fo:inline>
+</fo:block>
+</fo:list-item-label>
+<fo:list-item-body start-indent="body-start()">
+<fo:block>Player5</fo:block>
+</fo:list-item-body>
+</fo:list-item>
+        </fo:list-block>
+</fo:list-item-body>
+</fo:list-item>
+    </fo:list-block>
+<fo:block padding-top="3pt" text-align="left" color="black" space-after.optimum="15pt" line-height="24pt" font-family="sans-serif" font-size="11pt">
+            Il y aura les actions suivantes à faire :
+          </fo:block>
+<fo:table border-collapse="collapse" width="100%" table-layout="fixed">
+<fo:table-column border-style="solid" column-width="50mm"/>
+<fo:table-column border-style="solid" column-width="50mm"/>
+<fo:table-header border-style="solid">
+<fo:table-row>
+<fo:table-cell>
+<fo:block>Action</fo:block>
+</fo:table-cell>
+<fo:table-cell>
+<fo:block>Points</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-header>
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell>
+<fo:block>Faire un selfie</fo:block>
+</fo:table-cell>
+<fo:table-cell>
+<fo:block>10</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+<fo:block padding-top="3pt" text-align="left" color="black" space-after.optimum="15pt" line-height="24pt" font-family="sans-serif" font-size="11pt">
+            Les photos suivantes seront à découvrir :
+          </fo:block>
+<fo:table border-collapse="collapse" width="100%" table-layout="fixed">
+<fo:table-column border-style="solid" column-width="50mm"/>
+<fo:table-column border-style="solid" column-width="50mm"/>
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell>
+<fo:block>
+<fo:external-graphic content-width="50mm" content-height="scale-to-fit" scaling="uniform" src="https://www.ot-saumur.fr/photo/art/grande/387832-476620.jpg?v=1491836415"/>
+</fo:block>
+<fo:block text-align="center">1 Points
       </fo:block>
-
-      <fo:table table-layout="fixed" width="100%" border-collapse="collapse">
-        <fo:table-column column-width="50mm" border-style="solid"/>
-        <fo:table-column column-width="50mm" border-style="solid"/>
-        <fo:table-header border-style="solid">
-          <fo:table-row>
-            <fo:table-cell >
-              <fo:block>Action</fo:block>
-            </fo:table-cell>
-            <fo:table-cell >
-              <fo:block>Points</fo:block>
-            </fo:table-cell>
-
-          </fo:table-row>
-        </fo:table-header>
-        <fo:table-body>
-          <fo:table-row>
-            <fo:table-cell >
-              <fo:block>Faire un selfie</fo:block>
-            </fo:table-cell>
-            <fo:table-cell >
-              <fo:block>10</fo:block>
-            </fo:table-cell>
-          </fo:table-row>
-        </fo:table-body>
-      </fo:table>
-
-      <fo:block font-size="11pt"
-                font-family="sans-serif"
-                line-height="24pt"
-                space-after.optimum="15pt"
-                color="black"
-                text-align="left"
-                padding-top="3pt">
-        Les photos suivantes seront à découvrir :
+</fo:table-cell>
+<fo:table-cell>
+<fo:block>
+<fo:external-graphic content-width="50mm" content-height="scale-to-fit" scaling="uniform" src="https://www.berryprovince.com/wp-content/uploads/2019/02/chateauainaygnioncel-810x480.jpg"/>
+</fo:block>
+<fo:block text-align="center">2 Points
       </fo:block>
-      <fo:table table-layout="fixed" width="100%" border-collapse="collapse">
-        <fo:table-column column-width="50mm" border-style="solid"/>
-        <fo:table-column column-width="50mm" border-style="solid"/>
-        <fo:table-body>
-          <fo:table-row>
-            <fo:table-cell>
-              <fo:block>
-                <fo:external-graphic src="https://www.chateau-valencay.fr/wp-content/uploads/2019/02/VALENCAY_2019_GENERIQUE_01_COULEUR02-1.jpg" scaling="uniform" content-height="scale-to-fit" content-width="50mm" />
-              </fo:block>
-              <fo:block text-align="center">
-                1 Points
-              </fo:block>
-            </fo:table-cell>
-            <fo:table-cell>
-              <fo:block>
-                <fo:external-graphic src="https://www.berryprovince.com/wp-content/uploads/2019/02/chateauainaygnioncel-810x480.jpg" scaling="uniform" content-height="scale-to-fit" content-width="50mm" />
-              </fo:block>
-              <fo:block text-align="center">
-                2 Points
-              </fo:block>
-            </fo:table-cell>
-          </fo:table-row>
-        </fo:table-body>
-      </fo:table>
-      </fo:flow>
-  </fo:page-sequence>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:flow>
+</fo:page-sequence>
 </fo:root>

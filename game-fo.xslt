@@ -3,10 +3,27 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:fo="http://www.w3.org/1999/XSL/Format"
-  version="2.0">
+
+  version="1.0">
+  
   <xsl:output method="xml" encoding="UTF-8" indent="yes" />
   <xsl:param name="cols">2</xsl:param>
-  <xsl:template match="/Game">
+
+  <xsl:template name="date">
+    <xsl:param name="date-time"/>
+    <xsl:param name="date" select="substring-before($date-time,'T')"/>
+    <xsl:param name="year" select="substring-before($date,'-')"/>
+    <xsl:param name="month" 
+          select="substring-before(substring-after($date,'-'),'-')"/>
+    <xsl:param name="day" select="substring-after(substring-after($date,'-'),'-')"/>
+    <xsl:value-of select="$day"/>/<xsl:value-of select="$month"/>/<xsl:value-of select="$year"/>
+  </xsl:template>   
+  <xsl:template name="time">
+    <xsl:param name="date-time"/>
+    <xsl:param name="time" select="substring-after($date-time,'T')"/>
+    <xsl:value-of select="$time"></xsl:value-of>
+  </xsl:template> 
+  <xsl:template match="//Game">
 
     <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
       <fo:layout-master-set>
@@ -34,7 +51,7 @@
           padding-top="3pt">
             Chasse au trésor de <xsl:value-of select="./@city" ></xsl:value-of>
           </fo:block>
-          <!--<xsl:variable name="startDate" select="xs:dateTime('2012-10-21T22:10:15')"/>-->
+          
           <fo:block font-size="11pt"
             font-family="sans-serif"
             line-height="24pt"
@@ -45,7 +62,11 @@
             padding-top="3pt">
             La chasse au trésor de <fo:inline font-weight="bold">
               <xsl:value-of select="./@city" ></xsl:value-of>
-            </fo:inline> débutera le <xsl:value-of select="./@startDate"></xsl:value-of>.
+            </fo:inline> débutera le <xsl:call-template name="date">
+              <xsl:with-param name="date-time" select="./@startDate"/>
+            </xsl:call-template> à <xsl:call-template name="time">
+              <xsl:with-param name="date-time" select="./@startDate"/>
+            </xsl:call-template>.
           </fo:block>
           <fo:block font-size="11pt"
             font-family="sans-serif"
@@ -158,9 +179,10 @@
 
   <xsl:template match="Nodes">
     <fo:table table-layout="fixed" width="100%" border-collapse="collapse">
-      <fo:table-column column-width="50mm" border-style="solid"/>
-      <fo:table-column column-width="50mm" border-style="solid"/>
-      <fo:table-column column-width="50mm" border-style="solid"/>
+      <xsl:for-each select="(//node())[$cols >= position()]">
+        <fo:table-column column-width="50mm" border-style="solid"/>
+      </xsl:for-each>
+
       <fo:table-body>
 
         <xsl:apply-templates select="Node[@type='PictureNode'][position() mod $cols = 1 or position() = 1]"
@@ -186,4 +208,5 @@
     </fo:table-cell>
 
   </xsl:template>
+ 
 </xsl:stylesheet>

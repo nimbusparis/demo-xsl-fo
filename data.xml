@@ -1,43 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Game id="1" name="Game1" startDate="2021-05-01T14:00:00" city="Paris">
-  <Picture id="1" url="http://example.com/image1.jpg"></Picture>
-  <Teams>
-    <Team id="1" name="Team1">
-      <Players>
-      <Player id="1" name="Player1"></Player>
-      <Player id="2" name="Player2"></Player>
-      </Players>
-    </Team>
-    <Team id="2" name="Team2">
-      <Players>
-      <Player id="3" name="Player3"></Player>
-      <Player id="4" name="Player4"></Player>
-      <Player id="5" name="Player5"></Player>
-      </Players>
-    </Team>
-  </Teams>
-  <Nodes>
-    <Node id="1" name="Node 1" type="FirstNode" points="1">
-      <Children>
-        <Child id="2"></Child>
-      </Children>
-    </Node>
-    <Node id="2" name="Node 2" type="WaypointNode" points="0">
-      <Children>
-        <Child id="3"></Child>
-      </Children>
-    </Node>
-    <Node id="3" name="Node 3" type="ActionNode" points="10" action="Faire un selfie">
-      <Children>
-        <Child id="4"></Child>
-      </Children>
-    </Node>    
-    <Node id="4" name="Node 4" type="LastNode" points="0"></Node>
-    <Node id="5" name="Picture 1" type="PictureNode" points="1">
-      <Picture id="2" url="https://www.ot-saumur.fr/photo/art/grande/387832-476620.jpg?v=1491836415"></Picture>
-    </Node>
-    <Node id="6" name="Picture 2" type="PictureNode" points="2">
-      <Picture id="3" url="https://www.berryprovince.com/wp-content/uploads/2019/02/chateauainaygnioncel-810x480.jpg"></Picture>
-    </Node>
-  </Nodes>
-</Game>
+<data>
+  <Game id="1" name="Game1" startDate="2021-05-01T14:00:00" city="Paris">
+    <Picture id="1" url="http://example.com/image1.jpg"></Picture>
+    <Teams>
+      <Team id="1" name="Team1">
+        <Players>
+        <Player id="1" name="Player1"></Player>
+        <Player id="2" name="Player2"></Player>
+        </Players>
+      </Team>
+      <Team id="2" name="Team2">
+        <Players>
+        <Player id="3" name="Player3"></Player>
+        <Player id="4" name="Player4"></Player>
+        <Player id="5" name="Player5"></Player>
+        </Players>
+      </Team>
+    </Teams>
+    <Nodes>
+      <Node id="1" name="Node 1" type="FirstNode" points="1">
+        <Children>
+          <Child id="2"></Child>
+        </Children>
+      </Node>
+      <Node id="2" name="Node 2" type="WaypointNode" points="0">
+        <Children>
+          <Child id="3"></Child>
+        </Children>
+      </Node>
+      <Node id="3" name="Node 3" type="ActionNode" points="10" action="Faire un selfie">
+        <Children>
+          <Child id="4"></Child>
+        </Children>
+      </Node>    
+      <Node id="4" name="Node 4" type="LastNode" points="0"></Node>
+      <Node id="5" name="Picture 1" type="PictureNode" points="1">
+        <Picture id="2" url="https://www.ot-saumur.fr/photo/art/grande/387832-476620.jpg?v=1491836415"></Picture>
+      </Node>
+      <Node id="6" name="Picture 2" type="PictureNode" points="2">
+        <Picture id="3" url="https://www.berryprovince.com/wp-content/uploads/2019/02/chateauainaygnioncel-810x480.jpg"></Picture>
+      </Node>
+    </Nodes>
+  </Game>
+</data>
