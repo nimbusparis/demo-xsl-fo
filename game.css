@@ -1,0 +1,31 @@
+@page {
+    margin: 2.5cm;
+    size: A4;
+}
+
+body {
+    font-family: Calibri;
+}
+
+h1 {
+    text-align: center;
+}
+table {
+    width: 100%;
+}
+table, th, td {
+    border-style: solid;
+    border-collapse: collapse;
+}
+th, th {
+    width: 50%;
+}
+
+.cell-content {
+    text-align: center;
+}
+.header-action {
+    text-align: left;
+}
+
+
